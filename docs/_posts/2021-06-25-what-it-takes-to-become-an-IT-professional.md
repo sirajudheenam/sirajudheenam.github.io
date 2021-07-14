@@ -35,6 +35,8 @@ Professionals who take care of IT Infrastructure and Data Centers will fall in t
 DevOps Engineers do the stuff like, developing, patching, deploying and monitoring Softwares in the premises and mostly on Cloud Infrastructure using industry technologies and standards.
 As of now, a typical DevOps Engineer is capable of developing simple scripts in Python or Bash or Ruby or even PowerShell and be able to automate their day-to-day tasks using various tools. The following are the list of tools, but not limited to, DevOps Engineers use. Monitoring and Alerting are the critical topic once the application is delpoyed in production.
 
+- <a href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank">Learn basics of Computer Science from Harvard </a> or directly from <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">EdX</a>
+- <a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" target="_blank">CS50's Web Programming with Python and JavaScript</a>
 - <a href="https://www.docker.com/" target="_blank">Docker</a> - Container Management Tool
 - <a href="https://kubernetes.io/" target="_blank">Kubernetes or k8s</a> - Container Management Tool
 - <a href="https://helm.sh/" target="_blank">Helm</a> - Kubernetes Chart Management Tool

@@ -17,5 +17,5 @@ I lived and worked in few countries e.g., countries UK, Singapore and India sinc
 
 - [LinkedIn](https://www.linkedin.com/in/sirajudheen)
 - [Github](https://github.com/sirajudheenam)
-- [Twitter](https://twitter.com/ali_sirajudheen)
+- [Twitter](https://twitter.com/buzzmesam)
 - [WebSite](https://sirajudheenam.github.io)
