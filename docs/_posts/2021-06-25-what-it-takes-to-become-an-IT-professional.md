@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "What it takes to become an IT professional"
+date:   2021-06-25 03:54:21 +0530
+author: Sirajudheen Mohamed Ali
+categories: IT
+---
 # What it takes to become an IT Professional
 
 This guide is intended for Absolute beginner of Computer Science and does not know where to start to land in his/her career in Computer or Information Technology World.

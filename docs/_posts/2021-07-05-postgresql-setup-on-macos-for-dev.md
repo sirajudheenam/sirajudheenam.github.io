@@ -2,6 +2,7 @@
 layout: post
 title:  "Install & Configure PostGreSQL on macOS for development"
 date:   2021-07-05 05:42:21 +0530
+author: Sirajudheen Mohamed Ali
 categories: postgresql
 ---
 

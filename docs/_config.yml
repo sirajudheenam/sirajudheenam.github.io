@@ -48,10 +48,13 @@ google_adsense: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-autoprefixer
+  - jekyll-sitemap
 
 include: ['_pages', '_data', 'img']
 sass:
   sass_dir: _sass
+  style: compressed
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -72,3 +75,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234

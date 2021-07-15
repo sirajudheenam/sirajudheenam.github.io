@@ -2,10 +2,17 @@
 layout: post
 title:  "Ruby Crash Course"
 date:   2021-07-15 20:24:41 +0530
-categories: ruby basics
+author: Sirajudheen Mohamed Ali
+image: images/how_it_works.png
+comments: false
+hide: false
+categories: ruby
 ---
 
 ```ruby
+
+# Find out if you have ruby installed.
+
 print "Ruby is Object Oriented Programming Language"
 
 x = 1
@@ -41,8 +48,11 @@ puts "\ta\tb\nc\nd"
 puts "Difference between Single Quote and Double Quote"
 puts '\ta\tb\nc\nd'
 puts
+# Both Single Quote and Double Quotes produces same result.
 puts "I wanted to say #{greeting} #{target}"
+
 puts 'I wanted to say #{greeting} #{target}'
+
 puts "Hello".reverse
 puts "hello".capitalize
 puts "Hello".downcase
@@ -76,24 +86,35 @@ puts array2.inspect
 puts array2.to_s
 puts array2.join
 puts array2.join(", ")
-x="1,2,3,4,5"
-y=x.split(',')
+x = "1,2,3,4,5"
+y = x.split(',')
 puts y.reverse
 puts y.inspect
 array3 = [3, 5, 7, 4, 6, 9, 8, 3]
 puts array3.sort
 puts "Unsorted array 3"
-puts array3.uniq #Just to display the Unique values only
-#Modify the array and Display the Unique values
+
+# Just to display the Unique values only
+puts array3.uniq  
+# Modify the array and Display the Unique values
 puts array3.uniq!
 puts array3.inspect
-puts array3.delete_at(2) # Delete the digit at array position 2
-puts array3 #Displays after deletion
+
+# Delete the digit at array position 2
+puts array3.delete_at(2) 
+
+# Displays after deletion 
+puts array3 
 array3 << 14
 array3.push(0)
-puts array3 #Displays after inserting 
+
+# Displays after inserting
+puts array3  
 puts array3.inspect
-puts array3.pop # Pops the last one out
+
+# Pops the last one out
+puts array3.pop
+
 puts array3.shift
 puts array3.unshift(3)
 puts array3
@@ -130,6 +151,7 @@ puts "*******************************"
 puts "BOOLEANS"
 puts "Comparison & Logical Operators {== / < > <= >= ! != && ||}"
 
+# Comparision Operators
 x = 1
 puts x==1
 puts true.class
@@ -156,6 +178,7 @@ puts x={'a' =>1, 'b'=>2 }.has_key?(:a)
 puts x={'a' =>1, 'b'=>2 }.has_value?(1)
 puts x={'a' =>1, 'b'=>2 }.has_value?(4)
 
+# Ranges
 puts "Ranges 1....10"
 puts "Inclusive Ranges 1 2 3 4 5 6 7 8 9 10 (includes 10)"
 puts x = 1..10
@@ -176,14 +199,18 @@ puts x.include?(10) # Should return true
 puts y.include?(10) # Should return false
 puts "Exclusive Ranges - It still returns 10 as the last number"
 
-z=[*x] # Expanded 
+# Expanded 
+z = [*x] 
 puts z
+
 alpha ='a'..'m'
 puts alpha.include?('g')
 puts alpha.include?('m')
 alpha ='a'...'m'
 puts alpha.include?('g')
 puts alpha.include?('m')
+
+# Expand alpha
 puts [*alpha]
 puts [*alpha].inspect
 puts "*****************************"
@@ -233,15 +260,15 @@ puts "loop do
 	next ..
 	redo .. 
 	retry .. Start completely again"
-	e=0
+	e = 0
 	loop do
 		e+=2
-		break if e >=20
+		break if e >= 20
 		puts e
 	end
 puts "This code will skip printing 6 since we ask it to do next"
 	loop do 
-		 e +=2
+		 e += 2
 		break if e >=20
 		next if e==6
 		puts e
@@ -712,9 +739,10 @@ puts vehicle1.wheels
 
 
 # **************************************************
-# INHERITANCE - Only one class can be super class
+# INHERITANCE - Only one class can be a super class
 # Overriding - 
 # 
+
 #----------------------
 # Files & INPUT OUTPUT
 # __FILE__

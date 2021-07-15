@@ -35,3 +35,7 @@ gem "github-pages", "~> 215", group: :jekyll_plugins
 # https://pages.github.com/versions/
 
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jekyll-autoprefixer'
+gem 'therubyracer'
+

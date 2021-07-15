@@ -5,11 +5,15 @@
   
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     
+    {% if site.google_analytics %}{% include google_analytics.html %}{% endif %} 
+    {% if site.google_adsense %}{% include google_adsense.html %}{% endif %}
+    <meta name="msvalidate.01" content="23AE96F00DECAA6854BC8B40F04B979B" />
+    
     <!-- <link rel="shortcut icon" href="{{ "/img/favicon.ico" }}"/> -->
 
     <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png" />
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
     <link
       rel="canonical"
       href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
@@ -24,7 +28,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    
-    {% if site.google_analytics %}{% include google_analytics.html %}{% endif %} 
-    {% if site.google_adsense %}{% include google_adsense.html %}{% endif %}
+    {% seo %}
+
 </head>
