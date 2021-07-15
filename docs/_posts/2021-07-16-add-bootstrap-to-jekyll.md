@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Add Bootstrap CSS to Jekyll site"
-date: 2021-07-16 01:02:21 +0530
+date: 2021-07-15 01:02:21 +0530
 author: Sirajudheen Mohamed Ali
 categories: jekyll
 ---
