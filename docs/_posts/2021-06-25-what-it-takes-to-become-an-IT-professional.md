@@ -15,7 +15,7 @@ There are several Career paths in Computer Science / Information Technology. It 
 - [Search Engine Optimization Specialist](#Search_Engine_Optimization_Specialist)
 
 <a id="Software_Developer_or_Programmer"></a>
-#### Software Developer or Programmer
+### Software Developer or Programmer
 A developer or programmer is someone who writes code in Computer Language based on the requirements.
 It requires a strong foundation on how Computer, Networks and Stroage along with Cloud Technologies work together.
 Most of the times, a developer or a programmer works on Developing Software Programs for a particular purpose.
@@ -27,7 +27,7 @@ There several types of Development.
 - Learn to [Program using Ruby](https://pine.fm/LearnToProgram/)
 
 <a id="Infrastructure_Engineer"></a>
-#### Infrastructure Engineer: 
+### Infrastructure Engineer: 
 Professionals who take care of IT Infrastructure and Data Centers will fall in this category. They do arranging and Connecting Servers in the Data Center. They do Install Operating Systems and Softwares on those servers mostly remotely. At times, they do Bash Shell or PowerShell scripting to automate their tasks.
 
 <a id="DevOps_Engineer"></a>
@@ -49,31 +49,31 @@ Monitoring Alerting:
 - <a href="https://learn.chef.io/" target="_blank">OpsCode Chef</a>: Know  how Chef works and what is cookbook, recipe, runlist, resources, attribute. How to run a cookbook to make changes.
 
 <a id="Cloud_Engineer"></a>
-#### Cloud Engineer
+### Cloud Engineer
 
 <a id="Network_Engineer"></a>
-#### Network Engineer
+### Network Engineer
 He is the one who knows the bits and pieces of network packets goes through the wires of Internet.
 
 <a id="Storage_Engineer"></a>
-#### Storage Engineer
+### Storage Engineer
 He is the one who knows everything about how our data is stored in the Server. Job responsibilities include, but not limited to, wire, configure, test and maintain storage system either they are attached to in-house servers or hosted on Cloud. 
 
 
 <a id="Compliance_Security_Professional"></a>
-#### Compliance & Security Professional
+### Compliance & Security Professional
 She is the one who is in-charge of IT Security aspects, ranging from System Security, IT Security, Software Security, IT Audit and compliance measures to meet various standards of the industry eg., ISO.
 
 <a id="Data_Analyst_Data_Scientist"></a>
-#### Data Analyst & Data Scientist
+### Data Analyst & Data Scientist
 
 
 <a id="Social_Media_Specialist"></a>
-#### Social Media Specialist
+### Social Media Specialist
 
 
 <a id="Search_Engine_Optimization_Specialist"></a>
-#### Search Engine Optimization Specialist
+### Search Engine Optimization Specialist
 
 If you are building a website and wish to be appeared on the top of the search engine, you need to certain optimizations for your site. This process is called Search Engine Optimization (SEO).
 
@@ -93,25 +93,30 @@ Here is free [CS101 Lesson](https://online.stanford.edu/courses/soe-ycscs101-sp-
 - [Bash book](http://www.ebook777.com/ten-steps-linux-survival-essentials-navigating-bash-jungle/) to get started
 
 ### Know common Linux commands and how to execute them:
-	cd
-	mkdir
-	rm
-	ls
-	pwd
-	cp
-	mv
-	wget 
-	tree
-
+{% highlight bash %}
+cd
+mkdir
+rm
+ls
+pwd
+cp
+mv
+wget 
+tree
+{% endhighlight %}
 - Know how to Linux help system called `man`
-	Use: `man ls`
+
+`man ls`
 
 Even some advanced ones:
-	ln
-	find
-	sed
-	awk
-	curl
+{% highlight bash %}
+ln
+find
+sed
+awk
+curl
+{% endhighlight %}
+
 - Know what is PATH and why we use it.
 - Know what is an environment variable.
 
@@ -129,13 +134,12 @@ Learn from LaunchSchool [books](https://launchschool.com/books/).
 Some [courses](https://www.codecademy.com/learn/all) from [Codecademy](https://www.codecademy.com).
 
 
-
 ### Concepts:
 
-Know various flavors of Linux.
+Know various [distributions of Linux](https://en.wikipedia.org/wiki/List_of_Linux_distributions).
 
 - Debian-based eg., Debian, Ubuntu
-- Fedora-based eg., Fedora, CentOS, RedHat
+- RPM-based eg., Fedora, CentOS, RedHat
 - Know how to download OS ISO from website.
 	- [centos](https://centos.org/centos-linux/)
 	- [Ubuntu](https://releases.ubuntu.com/)
@@ -144,7 +148,7 @@ Know various flavors of Linux.
 - SSH - What is SSH and Know how to ssh in to a remote machine.
 - Get a nice Linux Book and learn Linux thoroughly at least one flavor.
 
-## Virtualization:
+### Virtualization:
 
 - Know the advantages of Virtualization. Difference between a Physical Server and a Virtual Server.
 - Start with 
@@ -158,7 +162,7 @@ Know various flavors of Linux.
 - [VMWare](https://www.vmware.com) - Largest software vendor in Virtualization space. They offer many tools such as ESXi and VCenter mostly to manage Server Virtualization. 
 - Compare virtualization with Containerization. See which one is the best.
 
-## Scripting / Programming Language:
+### Scripting / Programming Language:
 - Bash Shell Scripting on Linux and PowerShell on Windows.
 	- [Bash Beginner's Guide](http://tldp.org/LDP/Bash-Beginners-Guide/html/). [PDF Version](http://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
 	- [Tools Summary](http://www.tldp.org/LDP/GNU-Linux-Tools-Summary/GNU-Linux-Tools-Summary.pdf)
@@ -167,9 +171,9 @@ Know various flavors of Linux.
 	- Python
 	- Ruby
 	- Perl
-- HTML and CSS
+- Know some basic HTML and CSS
 [Video Tutorials](http://www.dontfeartheinternet.com/) on HTML and CSS
-- Markdown - Know how to use it. This document itself is written using MarkDown format and published using [Jekyll](https://jekyllrb.com/docs/).
+- Markdown - Know how to use it. This blog itself is written using MarkDown format and published using [Jekyll](https://jekyllrb.com/docs/).
 
 If you have picked JavaScript and [NodeJS - NodeSchool](https://nodeschool.io/) or [FreeCodeCamp](https://www.freecodecamp.com/) of the best place to learn them.
 
@@ -179,7 +183,7 @@ Ruby Resources:
 2. [rubyGirlBerlin](http://railsgirlsberlin.de/continue/resources-and-talks/)
 3. [rubymonstas](http://ruby-for-beginners.rubymonstas.org/)
 
-## Database:
+### Database:
 
 - Know at least one Database and how Database Works in General.
 - Know bit of SQL - Structure Query Language
@@ -189,12 +193,12 @@ Ruby Resources:
 - If you are comfortable with Python then use Django or Flask or any other Python framework.
 - If you are comfortable with Ruby then use Ruby-On-Rails or any other Ruby framework for Web Dev.
 
-## Web Servers
+### Web Servers
 - Know about web servers and how to install and use it.
 - Nginx, Apache etc.,
-- Know about ports webserver uses. Default port is 80. You can configure this.
+- Know about ports webserver uses. Default http port is 80. You can configure this.
 
-## Networking:
+### Networking:
 
 - Know How Internet and eMail Works.
 - Know what is IP Address (v4 and v6), CIDR, Subnet,Gateway.
@@ -205,15 +209,15 @@ Ruby Resources:
 - Know network tools nmap, netstat on Linux.
 - Know Protocols - HTTP, HTTPS, FTP, TCP, IP, UDP and where they are used.
 
-## Storage:
+### Storage:
 - Know what storage types are available.
-	Storage Area Networks, Network Attached Storage
+	- Storage Area Networks, Network Attached Storage
 - Know Storage vendors. NetApp, EMC, Dell, Huawei.
 - Know Cloud Storage and how to use them eg., Amazon S3
 	- Dropbox uses S3.
 	- Other common Online Storage Google Drive, Microsoft OneDrive.
 
-## Cloud Concepts:
+### Cloud Concepts:
 
 - Know what is Cloud and who are the Cloud providers.
  - [AWS - Amazon Web Services](https://aws.amazon.com/)
@@ -225,27 +229,28 @@ Ruby Resources:
 - Know how to spin up instances on various Clouds.
 - Know what is Container in Linux. Know various container technologies eg., Docker, Rocket and related tools such as Kubernates.
 
-
-## Version Control Tool:
+### Version Control Tool:
 
 - [Git](https://git-scm.com/) - Version Control System. Know what is this and why do we need to use it.
-- Know git commands and master it.
+- Know `git` commands and master it.
 
-	- git clone
-	- git add
-	- git commit
-	- git push
-	- git rm
-	- git remote
+{% highlight bash %}
+git clone
+git add
+git commit
+git push
+git rm
+git remote
+{% endhighlight %}
 
 [Cloud9](https://aws.amazon.com/cloud9/) to Practice programming online without having to setup anything locally.
 [CodePen](https://codepen.io/pen/)
 
-## Free Deployment on Cloud:
+### Free Deployment on Cloud:
 You can deploy your developed application on [heroku](https://www.heroku.com/) for free.
 By deploying to Cloud, you will learning the [continuous delivery](#) 
 
-# Exercises:
+### Exercises:
 
 1. Create a git repository on [github.com](github.com) and upload single file to github using command line.
 
@@ -266,5 +271,3 @@ Other Platforms to learn:
 - [Khan Academy](https://www.khanacademy.org/)
 - [How Google hires](https://careers.google.com/how-we-hire/)
 - [Hackers' Rank](https://www.hackerrank.com/)
-
-

@@ -33,17 +33,25 @@ domain: sirajudheenam.github.io
 twitter_username: ali_sirajudheen
 github_username:  sirajudheenam
 
+# Google Analytics and Adsense
+google_tracking_id: G-HW7SJTZJEC
+measurement_id: G-HW7SJTZJEC
+google_analytics: true
+google_adsense: true
 # domain: my-site.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 # url: https://my-site.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 # baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a subfolder   
 
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+include: ['_pages', '_data', 'blog', 'img']
+sass:
+    sass_dir: _sass
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
