@@ -81,3 +81,4 @@ webmaster_verifications:
   alexa: 1234
   yandex: 1234
   baidu: 1234
+theme: jekyll-theme-tactile
