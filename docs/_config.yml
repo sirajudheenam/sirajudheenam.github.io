@@ -33,11 +33,6 @@ domain: sirajudheenam.github.io
 twitter_username: ali_sirajudheen
 github_username:  sirajudheenam
 
-# Google Analytics and Adsense
-google_tracking_id: G-HW7SJTZJEC
-measurement_id: G-HW7SJTZJEC
-google_analytics: true
-google_adsense: true
 # domain: my-site.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 # url: https://my-site.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 # baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a subfolder   
@@ -77,9 +72,13 @@ exclude:
 
 webmaster_verifications:
   google: 1234
-  bing: 1234
+  bing: 23AE96F00DECAA6854BC8B40F04B979B
   alexa: 1234
   yandex: 1234
   baidu: 1234
-  
-# theme: jekyll-theme-tactile
+
+# Google Analytics and Adsense
+google_tracking_id: G-HW7SJTZJEC
+measurement_id: G-HW7SJTZJEC
+google_analytics: true
+google_adsense: true
