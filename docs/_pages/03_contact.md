@@ -4,6 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-Contact content goes here.
+Contact form goes here.
 
 My e-mail is [sirajudheenam@gmail.com](mailto:sirajudheenam@gmail.com).

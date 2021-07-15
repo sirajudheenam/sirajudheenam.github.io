@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-
-<h2>Main Page</h2>
-
-Main content goes here.
+<p>
+{% for post in site.posts %}
+		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
+		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+{% endfor %}
+</p>
+<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
