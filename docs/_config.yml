@@ -82,3 +82,19 @@ google_tracking_id: G-HW7SJTZJEC
 measurement_id: G-HW7SJTZJEC
 google_analytics: true
 google_adsense: true
+
+# categories
+
+# permalink: /:categories/:title/
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"

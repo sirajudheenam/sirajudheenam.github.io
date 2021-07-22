@@ -1,9 +1,13 @@
 ---
 layout: post
+preview: "# Clone Bootstrap git repo as submodule"
 title:  "Add Bootstrap CSS to Jekyll site"
 date: 2021-07-15 01:02:21 +0530
 author: Sirajudheen Mohamed Ali
-categories: jekyll
+categories: 
+  - "jekyll"
+  - "seo"
+tag: jekyll
 ---
 
 ```bash

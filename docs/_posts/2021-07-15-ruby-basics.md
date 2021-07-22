@@ -7,6 +7,7 @@ image: images/how_it_works.png
 comments: false
 hide: false
 categories: ruby
+tag: ruby
 ---
 
 ```ruby
