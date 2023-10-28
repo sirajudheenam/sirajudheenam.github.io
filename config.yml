@@ -4,8 +4,8 @@ baseURL: /
 languageCode: en-us
 title: Blog
 
-# theme: github.com/adityatelange/hugo-PaperMod # available themes "Paper"
-theme: paperMod
+# https://github.com/sirajudheenam/hugoPaper.git
+theme: hugoPaper
 sectionPagesMenu: 'main'
 markup.highlight.noClasses: false
 
@@ -14,15 +14,15 @@ disqusShortname: 'buzzmesam' # add disqus comments
 # color style
 color: 'gray' # linen, wheat, gray, light
 # header social icons
-twitter: 'buzzmesam' # twitter.com/YOUR_TWITTER_ID
-github: 'buzzmesam' # github.com/YOUR_GITHUB_ID
+twitter: 'ali_sirajudheen' # twitter.com/YOUR_TWITTER_ID
+github: 'sirajudheenam' # github.com/YOUR_GITHUB_ID
 instagram: 'buzzmesam' # instagram.com/YOUR_INSTAGRAM_ID
 rss: true # show rss icon with link
 
 # home page profile
-avatar: 'buzzmesam@gmail.com' # Gravatar email or image url(e.g. "https://deno.land/logo.svg")
-name: 'Sam Miller'
-bio: 'Complex bio to go with'
+avatar: 'sirajudheenam@gmail.com' # Gravatar email or image url(e.g. "https://deno.land/logo.svg")
+name: 'Sirajudheen Mohamed Ali'
+bio: 'Simple guy with simple life'
 
 # misc
 disableHLJS: true # disable requesting highlight.js
