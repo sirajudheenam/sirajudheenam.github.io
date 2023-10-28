@@ -1,0 +1,32 @@
+# Hugo Configuration file
+# baseURL: 'https://sirajudheen.netlify.app/'
+baseURL: /
+languageCode: en-us
+title: Blog
+
+# theme: github.com/adityatelange/hugo-PaperMod # available themes "Paper"
+theme: paperMod
+sectionPagesMenu: 'main'
+markup.highlight.noClasses: false
+
+# Paper Theme related
+disqusShortname: 'buzzmesam' # add disqus comments
+# color style
+color: 'gray' # linen, wheat, gray, light
+# header social icons
+twitter: 'buzzmesam' # twitter.com/YOUR_TWITTER_ID
+github: 'buzzmesam' # github.com/YOUR_GITHUB_ID
+instagram: 'buzzmesam' # instagram.com/YOUR_INSTAGRAM_ID
+rss: true # show rss icon with link
+
+# home page profile
+avatar: 'buzzmesam@gmail.com' # Gravatar email or image url(e.g. "https://deno.land/logo.svg")
+name: 'Sam Miller'
+bio: 'Complex bio to go with'
+
+# misc
+disableHLJS: true # disable requesting highlight.js
+monoDarkIcon: true # show monochrome dark mode icon
+
+# debug
+debug: true

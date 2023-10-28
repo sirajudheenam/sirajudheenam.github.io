@@ -1,0 +1,11 @@
+[build]
+  command = "hugo"
+  functions = "netlify/functions"
+  publish = "public"
+[build.processing.html]
+  pretty_urls = true
+
+[dev]
+  command = "hugo server --buildDrafts"
+  publish = "public"
+  #targetPort = 3010

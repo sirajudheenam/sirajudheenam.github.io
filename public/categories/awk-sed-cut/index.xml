@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>awk sed cut on Blog</title>
+    <link>https://blog.berlin-consulting-services.de/categories/awk-sed-cut/</link>
+    <description>Recent content in awk sed cut on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Feb 2022 04:04:21 +0530</lastBuildDate><atom:link href="https://blog.berlin-consulting-services.de/categories/awk-sed-cut/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Text processing using awk sed and cut</title>
+      <link>https://blog.berlin-consulting-services.de/tech/linux/text-processing-using-awk-sed-and-cut/</link>
+      <pubDate>Fri, 18 Feb 2022 04:04:21 +0530</pubDate>
+      
+      <guid>https://blog.berlin-consulting-services.de/tech/linux/text-processing-using-awk-sed-and-cut/</guid>
+      <description>awk openstack image list &amp;gt; images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk &amp;#39;$4==&amp;#34;windows-2016&amp;#34; {print $2}&amp;#39; images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk &amp;#39;$4==&amp;#34;windows-2016&amp;#34; {print $2}&amp;#39; images.</description>
+    </item>
+    
+  </channel>
+</rss>

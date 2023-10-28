@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog</title>
+    <link>https://blog.berlin-consulting-services.de/posts/</link>
+    <description>Recent content in Posts on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2022 12:03:27 +0530</lastBuildDate><atom:link href="https://blog.berlin-consulting-services.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I deployed a Hugo Site on my github page</title>
+      <link>https://blog.berlin-consulting-services.de/posts/publish-hugo-site/</link>
+      <pubDate>Tue, 08 Mar 2022 12:03:27 +0530</pubDate>
+      
+      <guid>https://blog.berlin-consulting-services.de/posts/publish-hugo-site/</guid>
+      <description>Instructions to publish a site. brew install hugo hugo version hugo new site blog cd blog # add a theme # list of themes: https://themes.gohugo.io/ git init. git submodule add https://github.com/razonyang/hugo-theme-bootstrap themes/hugo-theme-bootstrap echo theme = \&amp;#34;hugo-theme-bootstrap\&amp;#34; &amp;gt;&amp;gt; config.toml hugo new posts/my-first-post.md cat &amp;gt;&amp;gt; posts/my-first-post.md &amp;lt;&amp;lt;EOF --- title: &amp;#34;First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: false --- # This is the heading of my first post EOF hugo server # or For full rebuilds on change: hugo server --disableFastRender http://localhost:1313/ Create a file in `.</description>
+    </item>
+    
+  </channel>
+</rss>
