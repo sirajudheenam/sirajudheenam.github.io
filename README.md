@@ -19,5 +19,3 @@ Hugo Personal Website on netlify and github pages
 - create a config file in `.github/workflows/hugo.yml`
 
 - restored to previous state by `git reset <commit-sha> --hard`.
-
-git submodule add <url> themes/paperMod
