@@ -1,7 +1,11 @@
 [build]
-  command = "hugo"
+  command = "hugo --gc --minify"
   functions = "netlify/functions"
   publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.119.0"
+
 [build.processing.html]
   pretty_urls = true
 
@@ -9,3 +13,15 @@
   command = "hugo server --buildDrafts"
   publish = "public"
   targetPort = 3010
+
+[context.production.environment]
+  HUGO_VERSION = "0.115.4"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.115.4"
+
+[[redirects]]
+  from   = "/npmjs/*"
+  to     = "/npmjs/"
+  status = 200
