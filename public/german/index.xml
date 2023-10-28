@@ -1,37 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>German on Blog</title>
-    <link>https://blog.berlin-consulting-services.de/german/</link>
+    <link>/german/</link>
     <description>Recent content in German on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 17 Dec 2022 07:58:43 +0100</lastBuildDate><atom:link href="https://blog.berlin-consulting-services.de/german/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Dec 2022 07:58:43 +0100</lastBuildDate><atom:link href="/german/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>API Reference for Developers of language sites</title>
-      <link>https://blog.berlin-consulting-services.de/german/api-reference-for-developers-of-language-sites/</link>
-      <pubDate>Mon, 19 Dec 2022 02:07:09 +0100</pubDate>
+      <title>German grammatik</title>
+      <link>/german/german-grammatik/</link>
+      <pubDate>Sat, 30 Sep 2023 08:09:44 +0100</pubDate>
       
-      <guid>https://blog.berlin-consulting-services.de/german/api-reference-for-developers-of-language-sites/</guid>
-      <description>pons
+      <guid>/german/german-grammatik/</guid>
+      <description>Pronouns: personal
+Singular / Person Nom Akk. Dativ. I ich mich mir II Sie Sie Ihnen II du dich dir III er ihn ihm III sie sie ihr III es es ihm Plural / Person Nom Acc Dativ I Wir unser/uns uns II ihr euch euch II Sie Sie Ihnen III sie sie ihnen Person subject possessive Object I I My Me / Myself (reflexive pronoun) I We Our Us II You Your You Declensions Chart - Articles - Other determiners - Adjective endings M Masculine F Feminine N Neuter P Plural &amp;ndash; M - - F - N - - P - &amp;ndash; n s w s w n s w s w Nominative - r e e e - s e e n Akkusative n n e e - s e e n Dative m n r n m n n n Genitive s n r n s n r n Why Cases: The case shows the function of the noun in sentence.</description>
+    </item>
+    
+    <item>
+      <title>German</title>
+      <link>/german/german_resources/</link>
+      <pubDate>Sat, 30 Sep 2023 07:58:43 +0100</pubDate>
+      
+      <guid>/german/german_resources/</guid>
+      <description>List of free German learning resources: verbs
+pons vocabulary trainer
+Gratis Deutsch Lektionen - Grammatik - Personalpronomen
+Satzbau - Deutsche Grammatik
+Englischer Satzbau in Hauptsätzen und Nebensätzen
+API References: pons
 dwds</description>
     </item>
     
     <item>
+      <title>Free Text in German</title>
+      <link>/german/german_free_text/</link>
+      <pubDate>Fri, 29 Sep 2023 08:07:44 +0100</pubDate>
+      
+      <guid>/german/german_free_text/</guid>
+      <description> DE EN Schau dir deine Bilder online an und hol dir jetzt dein gratis bild. View your pictures online and get your free picture now. der Fotograf war da! the photographer was there! Fur weitere fragen besuche unsere Chat auf www.mein-bilderbestellung.de 46CX2-DAF938 </description>
+    </item>
+    
+    <item>
+      <title>German A2.1</title>
+      <link>/german/german-vhs_eltern_kurz_a2/</link>
+      <pubDate>Thu, 14 Sep 2023 10:09:59 +0100</pubDate>
+      
+      <guid>/german/german-vhs_eltern_kurz_a2/</guid>
+      <description> DEutsch Englisch Ich bin in der Arcaden I&amp;rsquo;m in the arcade Ich habe nur geguckt I just looked Ich habe Kaffee getrunken I drank coffee Ich glaube dir (Dativ) I believe you Ich helfe dir (Dativ) I will help you Gegangen Gone Meine Tochter ist krank. My daughter is sick. Sie hat ihren Bruder angesteckt. She infected her brother. Sie (wer/nominativ) hat ihren(den /wen? Akkusativ) Bruder angesteckt anstecken Infect Ich gebe dir den Stift I&amp;rsquo;ll give you the pen Ich gebe dir (Dativ) den Stift (Akkusativ) </description>
+    </item>
+    
+    <item>
+      <title>Max geht zur tagesmutter</title>
+      <link>/german/german_max-geht_zur_tagesmutter/</link>
+      <pubDate>Wed, 13 Sep 2023 08:07:44 +0100</pubDate>
+      
+      <guid>/german/german_max-geht_zur_tagesmutter/</guid>
+      <description> German English Max hat gerade die Legoburg von Felix abgerissen, als Mama ins kinderzimmer kommt. Max has just torn down Felix&amp;rsquo;s Lego castle when mom comes into the children&amp;rsquo;s room. Vocabulary
+German English gerade Straight die Legoburg Lego castle abgerissen tore off </description>
+    </item>
+    
+    <item>
+      <title>German A2.1</title>
+      <link>/german/german-a2-1/</link>
+      <pubDate>Mon, 26 Jun 2023 10:09:59 +0100</pubDate>
+      
+      <guid>/german/german-a2-1/</guid>
+      <description>KursBuch Stellen Sie sich vor. - Imagine Stellen - Place sich - itself vor - before
+verpflichtung - Obligation
+Liesen Sie die Texte und verbinden Sie.
+Hallo, Mein Name is Tim Wilson. Ich komme aus Ottawa. Das ist die Hauptstadt von Kanada. Dort leben auch meine Eltern und mein Bruder. Ich bin schon fast ein Jahr hier in Deutschland. Ich habe einen Sprachkurs gemacht und mein Deutsch verbessert. Jetzt habe ich eine Stelle und der Rezeption in einem Hotel bekommen und ziehe gerade um.</description>
+    </item>
+    
+    <item>
+      <title>Life in germany test</title>
+      <link>/german/german-life-in-germany-test/</link>
+      <pubDate>Mon, 26 Jun 2023 10:09:59 +0100</pubDate>
+      
+      <guid>/german/german-life-in-germany-test/</guid>
+      <description>Aufgabe 1 Aufgabe 2 Aufgabe 3 Aufgabe 4 Aufgabe 1 In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil ... In Germany, people are allowed to say something openly against the government because ... Deutsch English 1. hier Religionsfreiheit gilt. 1. freedom of religion applies here. 2. die Menschen Steuern zahlen. 2. people pay taxes. 3. die Menschen das Wahlrecht haben. 3. people have the right to vote.</description>
+    </item>
+    
+    <item>
+      <title>Weekdays</title>
+      <link>/german/weekdays/</link>
+      <pubDate>Sun, 18 Dec 2022 09:21:59 +0100</pubDate>
+      
+      <guid>/german/weekdays/</guid>
+      <description>Weekdays English Deutsch Monday der Montag Tuesday der Dienstag Wednesday der Mittwoch Thursday der Donnerstag Friday der Freitag Saturday der Samstag Sunday der Sonntag English Deutsch Week die Woche This Week diese Woche Next Week Nachste Woche The Weekend das Wohenende English Deutsch On the Weekend am Wohenende Today heute yesterday gestern Day before yesterday vorgestern Tomorrow morgern Day after tomorrow übermorgen </description>
+    </item>
+    
+    <item>
       <title>German nouns</title>
-      <link>https://blog.berlin-consulting-services.de/german/german-nouns/</link>
+      <link>/german/german-nouns/</link>
       <pubDate>Sat, 17 Dec 2022 08:09:44 +0100</pubDate>
       
-      <guid>https://blog.berlin-consulting-services.de/german/german-nouns/</guid>
-      <description>Word Meaning Einstufungstest placement test ledig single verwitwet widowed geschieden divorced Einleitung Introduction Die Häufigkeit The frequency Begrüßung Greetings Abschied To take Leave Word Meaning comments / plural die badewanne bathtub - die balkon balcony - die dusche shower - die garage garage - die garage garage - der/die hausmeister care taker - die kaution deposit - der keller cellar - die küche kitchen - der lärm noise - die miete rent - die möbel furniture	plural - der müll garbage - die mülltone Trash Can - die nebenkosten additional costs	pl.</description>
+      <guid>/german/german-nouns/</guid>
+      <description>Word Meaning Einstufungstest placement test ledig single verwitwet widowed geschieden divorced Einleitung Introduction Die Häufigkeit The frequency Begrüßung Greetings Abschied To take Leave gleischzeitig Simultaneously / at the same time / concurrently / at once. Word Meaning comments / plural die badewanne bathtub - die balkon balcony - die dusche shower - die garage garage - der/die hausmeister care taker - die kaution deposit - der keller cellar - die küche kitchen - der lärm noise - die miete rent - die möbel furniture plural - der müll garbage - die mülltone Trash Can - die nebenkosten additional costs pl.</description>
     </item>
     
     <item>
       <title>German sentences</title>
-      <link>https://blog.berlin-consulting-services.de/german/german-sentences/</link>
+      <link>/german/german-sentences/</link>
       <pubDate>Sat, 17 Dec 2022 08:09:34 +0100</pubDate>
       
-      <guid>https://blog.berlin-consulting-services.de/german/german-sentences/</guid>
+      <guid>/german/german-sentences/</guid>
       <description>Lesson 1 Guten Tag. Mein Name ist Lara Nowak.
 Guten Tag. Freut mich.
 Ich heisse Klara Schneider.
@@ -51,13 +124,132 @@ aus aus dem aus der aus den Deutschland Jemen Schweiz USA Osterreich Suden Türk
     </item>
     
     <item>
-      <title>German verbs</title>
-      <link>https://blog.berlin-consulting-services.de/german/german-verbs/</link>
+      <title>German sentences</title>
+      <link>/german/german-sentences/</link>
       <pubDate>Sat, 17 Dec 2022 08:09:34 +0100</pubDate>
       
-      <guid>https://blog.berlin-consulting-services.de/german/german-verbs/</guid>
+      <guid>/german/german-sentences/</guid>
+      <description>German Stories Story 1: Die Sonne lacht vom Himmel. Pixi und seine Freunde wollen ein Picknik machen. The sun is laughing from the sky. Pixi and his friends want to go on a picnic.
+Jeder hat etwas zu essen dabei. Ricky Waschbär hat sich sein Lasso umgehängt. Everyone has something to eat with them. Ricky Raccoon has put on his lasso.
+Er kommt nämlich aus Amerika, wo die Cowboys wohnen. He comes from America, where the cowboys live.</description>
+    </item>
+    
+    <item>
+      <title>German verbs</title>
+      <link>/german/german-verbs/</link>
+      <pubDate>Sat, 17 Dec 2022 08:09:34 +0100</pubDate>
+      
+      <guid>/german/german-verbs/</guid>
       <description>Verbs: Sollen - Must auszuwerten - evaluate
-INDIKATIV Präsens &amp;mdash;- Verb Example ich spreche &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; wir sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; du sprichst &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; er/sie/es spricht &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; ihr sprecht &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Sie sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Präteritum &amp;mdash;- Verb Example ich sprach &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; wir sprachen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; du sprachst &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; er/sie/es sprach &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; ihr spracht &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Sie sprachen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Futur I &amp;mdash;- Verb Example ich werde sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; wir werden sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; du wirst sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; er/sie/es wird sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; ihr werdet sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Sie werden sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Verb Meaning Ich	(I) Du (you, inf.</description>
+INDIKATIV Präsens &amp;mdash;- Verb Example ich spreche &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; wir sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; du sprichst &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; er/sie/es spricht &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; ihr sprecht &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Sie sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Präteritum &amp;mdash;- Verb Example ich sprach &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; wir sprachen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; du sprachst &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; er/sie/es sprach &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; ihr spracht &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Sie sprachen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Futur I &amp;mdash;- Verb Example ich werde sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; wir werden sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; du wirst sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; er/sie/es wird sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; ihr werdet sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Sie werden sprechen &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; Verb Meaning ich Du er/sie/es Wir ihr Sie/sie Noun stehen Get up stehe stehst steht stehen steht stehen &amp;ndash; gehen Go gehe gehst &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; das Gehen essen Eat esse isst isst essen esst essen das Essen lesen Read lese liest liest lesen lest lesen das Lesen hören Listen &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; sprachen Speak sprache sprichst spricht sprechen spricht sprechen &amp;ndash; machen Make &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; möcheten Want &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; möcheten Want &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; verheiraten marry &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; die Verheiratete auszuwerten evaluate &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; &amp;ndash; die Verheiratete | Verb | Meaning|ich|Du|er/sie/es |Wir|ihr|Sie/sie| | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | &amp;mdash;&amp;mdash;&amp;ndash;	| &amp;mdash;&amp;ndash;	| &amp;mdash; | &amp;mdash;&amp;mdash;&amp;mdash;	| &amp;mdash;	| &amp;mdash;	| &amp;mdash;&amp;mdash;- | Noun | | haben	| have | habe | hast| hat | haben	| habt	| haben | &amp;ndash; | | sein	| is/are | bin | bist| ist | sind	| seid	| sind | &amp;ndash; |</description>
+    </item>
+    
+    <item>
+      <title>German_online_exercises</title>
+      <link>/german/german_online_exercises/</link>
+      <pubDate>Sat, 17 Dec 2022 08:09:26 +0100</pubDate>
+      
+      <guid>/german/german_online_exercises/</guid>
+      <description>Online Exercises: Begrüßung - Greetings Abschied - To take Leave Wörter (schwer) - Words (hard) Grammatik (leicht) - grammar (easy)
+Guten Tag! Ich heiße Sean McEwan. Wie heißen Sie? Guten Tag, freut mich. Ich heiße Lin Liu. Woher kommen Sie, Herr McEwan? Ich komme aus Schottland. Ich spreche Englisch und ein bisschen Deutsch Sie sprechen gut Deutsch! Danke!
+Hallo, ich bin Oscar und ich komme aus Mexiko. Und wer bist du?</description>
+    </item>
+    
+    <item>
+      <title>Child Book</title>
+      <link>/german/german_child_book/</link>
+      <pubDate>Sat, 17 Dec 2022 08:07:44 +0100</pubDate>
+      
+      <guid>/german/german_child_book/</guid>
+      <description> aufgabe bleibt im gleichen zehner - task remains in the same tens aufgabe ergibt im genau 10 oder 20 - task gives me exactly 10 or 20 aufgabe geht über den Zehner - task goes beyond the ten Legen und Rechnen - Laying and arithmetic Subtraktion - Subtraction </description>
+    </item>
+    
+    <item>
+      <title>DW_prufung</title>
+      <link>/german/german_dw_prufung/</link>
+      <pubDate>Sat, 17 Dec 2022 08:07:44 +0100</pubDate>
+      
+      <guid>/german/german_dw_prufung/</guid>
+      <description>Übung 3
+Du liest einen Kurzartikel über die Stadt Weimar. Entscheide beim Lesen, ob die folgenden Aussagen richtig oder falsch sind. Wenn sie richtig sind, wähl die Antwort Ja, wenn nicht, wähl die Antwort Nein.
+Es sind nicht immer die großen Städte, die die meisten Attraktionen zu bieten haben. Der beste Beweis dafür ist die Stadt Weimar in Thüringen. Sie hat nur 65.000 Einwohner, gehört aber, was die Anzahl der Touristen angeht, zu den absoluten Spitzenreitern in Deutschland.</description>
+    </item>
+    
+    <item>
+      <title>German A1.1</title>
+      <link>/german/german-a1-1/</link>
+      <pubDate>Sat, 17 Dec 2022 08:07:44 +0100</pubDate>
+      
+      <guid>/german/german-a1-1/</guid>
+      <description>17 Dec 2022
+This is bold text, and this is emphasized text.
+Visit the Schritte Plus Learning website!
+A1.1 Test: https://www.hueber.de/schritte-plus-neu/oet?niveau=a11
+Guten Tag, ich bin Andreas Meier. Und wie (heißen) Sie? Davide Mondino. Was (sprichst) du? Polnisch und ein bisschen Englisch. (Woher) kommen Sie, Herr Erol? (Aus) der Türkei. (Hast) du Kinder? Ja, zwei. Das (ist) meine Schwester und das (sind) meine Eltern. ?? Das sind Claire und Charles. (Sie) leben in der Schweiz.</description>
+    </item>
+    
+    <item>
+      <title>German A2.2</title>
+      <link>/german/german-a2-2/</link>
+      <pubDate>Sat, 17 Dec 2022 08:07:44 +0100</pubDate>
+      
+      <guid>/german/german-a2-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/german/a1.1_other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/german/a1.1_other/</guid>
+      <description>Online Exercises: https://www.hueber.de/schritte-plus-neu/lernen/uebungen
+https://www.hueber.de/exercises/530-25129/?rootPath=/exercises/530-25129/#/content/2c9f850d5f1d9093015fc5ad53646079
+Begrüßung - Greetings Abschied - To take Leave Wörter (schwer) - Words (hard) Grammatik (leicht) - grammar (easy)
+Guten Tag! Ich heiße Sean McEwan. Wie heißen Sie? Guten Tag, freut mich. Ich heiße Lin Liu. Woher kommen Sie, Herr McEwan? Ich komme aus Schottland. Ich spreche Englisch und ein bisschen Deutsch Sie sprechen gut Deutsch! Danke!
+Hallo, ich bin Oscar und ich komme aus Mexiko. Und wer bist du?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/german/a1.1_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/german/a1.1_test/</guid>
+      <description>17 Dec 2022 A1.1 Test: https://www.hueber.de/schritte-plus-neu/oet?niveau=a11 https://www.hueber.de/schritte-plus-neu/lernen
+Guten Tag, ich bin Andreas Meier. Und wie &amp;lt;heißen&amp;gt; Sie? Davide Mondino. Was du? Polnisch und ein bisschen Englisch. kommen Sie, Herr Erol? der Türkei. du Kinder? Ja, zwei. Das meine Schwester und das meine Eltern. ?? Das sind Claire und Charles. leben in der Schweiz. Wo ihr? In Berlin. Mama, ist das eine Tomate? Nein. Das ist doch &amp;lt;keine?&amp;gt; Tomate, das ist eine Orange.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/german/another_german_translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/german/another_german_translation/</guid>
+      <description>fünfundzwanzig nach zwölf | twenty five after twelve fünf vor halb eins | five to half past twelve fünfunddreißig vor eins | thirty five before one
+ankommen | arrive eingeben | input Ankunft | Arrival abfahren | depart Verspätung | Tardiness Aber das hat er fast immer | But he almost always has that Aber er kommt fast immer zu spät | But he is almost always late Ab Dienstag | From Tuesday</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/german/chatgpt_ideas_21_sep_2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/german/chatgpt_ideas_21_sep_2023/</guid>
+      <description>User what are the best ways to study and get B1 level in German with weekly schedule and resources and materials
+ChatGPT Achieving a B1 level in German requires dedication, consistency, and effective study methods. Here&amp;rsquo;s a weekly study plan and recommended resources to help you reach your goal:
+Monday - Vocabulary Building:
+Spend 30 minutes to an hour on vocabulary. Use apps like Duolingo, Memrise, or Anki to practice and learn new words.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/german/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/german/readme/</guid>
+      <description>sirajudheen.netlify.app Hugo Personal Website on netlify and github pages
+create personal site on github (.github.io) clone the repo locally (git clone https://github.com/sirajudheenam/&amp;lt;git-username&amp;gt;.github.io) install hugo (brew install hugo) create a site with Hugo (hugo new site hugo_personal_site) cd hugo_personal_site git init git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/paperMod echo &amp;ldquo;theme: &amp;lsquo;paperMod&amp;rsquo;&amp;rdquo; &amp;raquo; config.yaml hugo server &amp;ndash;buildDrafts # with a flag to build the draft for preview create a github actions for hugo on github settings for pages, where you can create a config file and commit it.</description>
     </item>
     
   </channel>

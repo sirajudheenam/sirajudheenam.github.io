@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Text processing using awk sed and cut | Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="awk openstack image list &gt; images.txt &#43;----------------&#43;--------------&#43;-----------&#43; | ID | Name | Status | &#43;----------------&#43;--------------&#43;-----------&#43; | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | &#43;----------------&#43;--------------&#43;-----------&#43; extract only windows-2016 image id # on a bash or zsh shell ID=`awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.">
+<meta name="author" content="">
+<link rel="canonical" href="/tech/linux/text-processing-using-awk-sed-and-cut/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Text processing using awk sed and cut" />
+<meta property="og:description" content="awk openstack image list &gt; images.txt &#43;----------------&#43;--------------&#43;-----------&#43; | ID | Name | Status | &#43;----------------&#43;--------------&#43;-----------&#43; | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | &#43;----------------&#43;--------------&#43;-----------&#43; extract only windows-2016 image id # on a bash or zsh shell ID=`awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/tech/linux/text-processing-using-awk-sed-and-cut/" /><meta property="article:section" content="tech" />
+<meta property="article:published_time" content="2022-02-18T04:04:21+05:30" />
+<meta property="article:modified_time" content="2022-02-18T04:04:21+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Text processing using awk sed and cut"/>
+<meta name="twitter:description" content="awk openstack image list &gt; images.txt &#43;----------------&#43;--------------&#43;-----------&#43; | ID | Name | Status | &#43;----------------&#43;--------------&#43;-----------&#43; | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | &#43;----------------&#43;--------------&#43;-----------&#43; extract only windows-2016 image id # on a bash or zsh shell ID=`awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Teches",
+      "item": "/tech/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Text processing using awk sed and cut",
+      "item": "/tech/linux/text-processing-using-awk-sed-and-cut/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Text processing using awk sed and cut",
+  "name": "Text processing using awk sed and cut",
+  "description": "awk openstack image list \u0026gt; images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk \u0026#39;$4==\u0026#34;windows-2016\u0026#34; {print $2}\u0026#39; images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk \u0026#39;$4==\u0026#34;windows-2016\u0026#34; {print $2}\u0026#39; images.",
+  "keywords": [
+    
+  ],
+  "articleBody": "awk openstack image list \u003e images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk '$4==\"windows-2016\" {print $2}' images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk '$4==\"windows-2016\" {print $2}' images.txt) echo $ID 27a3-46c2-b821 using a variable # on a bash or zsh shell IMAGE_NAME=\"windows-2022\" ID=`awk -v image_name=$IMAGE_NAME '$4==image_name {print $2}' images.txt` echo $ID 68c8-4d4b-a5b5 # on a fish shell set IMAGE_NAME 'windows-2022' set ID $(awk -v image_name=$IMAGE_NAME '$4==image_name {print $2}' ~/tmp/images.txt) echo $ID 68c8-4d4b-a5b5 find a process (middleman) and kill it kill -9 $(ps -ef | grep middleman | awk '$8==\"/usr/local/var/rbenv/versions/2.3.0/bin/middleman\" {print $2}') # find another process and kill it cut list status column while read line do [ -z \"$line\" ] \u0026\u0026 continue ; echo $line|rev|cut -f5 -d' '|rev done \u003c images.txt read all image names while read line do [ -z \"$line\" ] \u0026\u0026 continue ; echo $line|cut -f4 -d' ' done \u003c images.txt get lines count cat -n images.txt | tail -n 1 | cut -f1 print the number of fields/columns in each line of the file awk '{print NF}' images.txt more presentable awk '{print NR \"----\" NF}' images.txt # 1----1 # 2----7 # 3----1 # 4----7 # 5----7 # 6----7 # 7----7 # 8----7 # 9----1 column count for each line while read line do [ -z \"$line\" ] \u0026\u0026 continue ; # echo $line COUNT=`echo $line|awk '{print NF}'` echo $COUNT # echo $line|rev|cut -f5 -d' '|rev done \u003c images.txt print column 2 if column text is not ID awk '{ if ($2!=\"ID\") {print \"Image\", $2, \"\\n\"} }' images.txt awk with conditions awk '{ id=$2; first_line=\"+----------------+--------------+-----------+\"; if($1!=first_line); { print \"ID\", $2, \"NAME\", $4, \"STATUS\", $6, \"\\n\"}; }' images.txt use a file with awk cat \u003c\u003c EOF \u003e image.awk { id=$2; name=$4; status=$6; first_line=\"+----------------+--------------+-----------+\"; if ( id!=\"ID\" ); { print \"ID\", $2, \"NAME\", $4, \"STATUS\", $6, \"\\n\"}; } EOF awk -f image.awk images.txt using a file for input another file for command. create a text file called kids.txt cat \u003c\u003c EOF \u003ekids.txt FEMIDA 8 Female Berlin FARZANA 3 Female Chennai YUSRA 6 Female Howrah AFIRA 10 Female Thanjavur FAZILA 4 Female Thanjavur WAFIQAH 13 Female Madurai FAZIL 10 Male Santhamanikam FAIZAL 8 Male Santhamanikam FEMINA 4 Female Santhamanikam EOF create an awk command file called language.awk cat \u003c\u003c EOF \u003elanguage.awk { name=$1; if ( name==\"FEMIDA\" ) language=\"German\"; else if (name==\"FARZANA\") language=\"English\"; else if (name==\"YUSRA\") language=\"German\"; else if (name==\"AFIRA\") language=\"English\"; else if (name==\"FAZILA\") language=\"English\"; else if (name==\"WAFIQAH\") language=\"English\"; else if (name==\"FAZIL\") language=\"English\"; else if (name==\"FAIZAL\") language=\"English\"; else language=\"None\"; if(language!=\"None\") print \"The favorite language of \", name, \"is \", language; else print \"No person found\"; } EOF run it awk -f language.awk kids.txt prints last column/field in each line awk 'NF\u003e1{print $NF}' kids.txt prints total number of rows/lines in the file awk 'END {print NR}' kids.txt similar commands to acheive the same thing wc -l \u003c kids.txt sed -n '$=' kids.txt brew install gawk get first field of a file gawk -F: '{ print $1 }' kids.txt create a file called marks.txt cat \u003c\u003c EOF \u003emarks.txt Tamil 95 English 100 Mathematics 100 Science 98 Social 98 EOF prints the entire line if text found grep '^Tamil' marks.txt gawk '{ sum += $2 }; END { print \"You scored \", sum, \"out of 500 marks\"}' marks.txt output You scored 491 out of 500 marks Text manipulation with cut -f3- prints column 3 onwards including columnn 3 echo \"ABC DEF MNO PQR ZSA\" | cut -d ' ' -f3- # it shows from columns 3 onwards including 3 MNO PQR ZSA -f3 prints column 3 only echo \"ABC DEF MNO PQR ZSA\" | cut -d ' ' -f3 # output MNO use awk to extract _input=kids.txt while IFS= read -r line do awk '{print substr($0, index($0,$4))}' \u003c\u003c\u003c \"$line\" done \u003c \"${_input}\" use cut to extract echo \"ONE TWO THREE FOUR FIVE\" | cut -d ' ' -f3- THREE FOUR FIVE sed replace just the text sed -ie 's/Tamil/German/g' marks.txt replace the entire line sed -ie 's/.*German.*/Tamil 90/g' marks.txt search something and write if not found grep -q '^English' marks.txt \u0026\u0026 sed -ie 's/^English.*/English 95/' marks.txt grep -q '^English' marks.txt \u0026\u0026 sed -ie 's/^English.*/English 100/' marks.txt || echo 'English 95' \u003e\u003e marks.txt @ as a separator; find Social and replaces the line with ‘SocialScience 98’ sed -ie 's@^Social.*@SocialScience 98@g' marks.txt finds Arabic in the file marks.txt, if not found writes it grep -q \"Arabic\" marks.txt || echo \"Arabic 99\" \u003e\u003e marks.txt ",
+  "wordCount" : "782",
+  "inLanguage": "en",
+  "datePublished": "2022-02-18T04:04:21+05:30",
+  "dateModified": "2022-02-18T04:04:21+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/tech/linux/text-processing-using-awk-sed-and-cut/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/about/" title="About">
+                    <span><i class='fa fa-heart'></i>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="/german/" title="German">
+                    <span>German</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tech/" title="Teches">
+                    <span>Teches</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Text processing using awk sed and cut
+    </h1>
+    <div class="post-meta"><span title='2022-02-18 04:04:21 +0530 +0530'>February 18, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="awk">awk<a hidden class="anchor" aria-hidden="true" href="#awk">#</a></h2>
+<pre tabindex="0"><code>openstack image list &gt; images.txt
++----------------+--------------+-----------+
+| ID             | Name         | Status    |
++----------------+--------------+-----------+
+| 9789-4b3f-95b8 | windows-2012 | active    |
+| 27a3-46c2-b821 | windows-2016 | active    |
+| f45a-4c89-a69f | windows-2019 | active    |
+| 012f-4751-822a | windows-2019 | active    |
+| 68c8-4d4b-a5b5 | windows-2022 | active    |
++----------------+--------------+-----------+
+</code></pre><h3 id="extract-only-windows-2016-image-id">extract only windows-2016 image id<a hidden class="anchor" aria-hidden="true" href="#extract-only-windows-2016-image-id">#</a></h3>
+<pre tabindex="0"><code># on a bash or zsh shell
+ID=`awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt`
+echo $ID
+27a3-46c2-b821
+
+# on a fish shell
+set ID $(awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt)
+echo $ID
+27a3-46c2-b821
+</code></pre><h3 id="using-a-variable">using a variable<a hidden class="anchor" aria-hidden="true" href="#using-a-variable">#</a></h3>
+<pre tabindex="0"><code># on a bash or zsh shell
+IMAGE_NAME=&#34;windows-2022&#34;
+ID=`awk -v image_name=$IMAGE_NAME &#39;$4==image_name {print $2}&#39; images.txt`
+echo $ID
+68c8-4d4b-a5b5
+
+# on a fish shell
+set IMAGE_NAME &#39;windows-2022&#39;
+set ID $(awk -v image_name=$IMAGE_NAME &#39;$4==image_name {print $2}&#39; ~/tmp/images.txt)
+echo $ID
+68c8-4d4b-a5b5
+</code></pre><h3 id="find-a-process-middleman-and-kill-it">find a process (middleman) and kill it<a hidden class="anchor" aria-hidden="true" href="#find-a-process-middleman-and-kill-it">#</a></h3>
+<pre tabindex="0"><code>kill -9 $(ps -ef | grep middleman | awk &#39;$8==&#34;/usr/local/var/rbenv/versions/2.3.0/bin/middleman&#34; {print $2}&#39;)
+# find another process and kill it
+</code></pre><h2 id="cut">cut<a hidden class="anchor" aria-hidden="true" href="#cut">#</a></h2>
+<h3 id="list-status-column">list status column<a hidden class="anchor" aria-hidden="true" href="#list-status-column">#</a></h3>
+<pre tabindex="0"><code>while read line
+do [ -z &#34;$line&#34; ] &amp;&amp; continue ;
+echo $line|rev|cut -f5 -d&#39; &#39;|rev
+done &lt; images.txt
+</code></pre><h3 id="read-all-image-names">read all image names<a hidden class="anchor" aria-hidden="true" href="#read-all-image-names">#</a></h3>
+<pre tabindex="0"><code>while read line
+do [ -z &#34;$line&#34; ] &amp;&amp; continue ;
+echo $line|cut -f4 -d&#39; &#39;
+done &lt; images.txt
+</code></pre><h3 id="get-lines-count">get lines count<a hidden class="anchor" aria-hidden="true" href="#get-lines-count">#</a></h3>
+<pre tabindex="0"><code>cat -n images.txt | tail -n 1 | cut -f1
+</code></pre><h3 id="print-the-number-of-fieldscolumns-in-each-line-of-the-file">print the number of fields/columns in each line of the file<a hidden class="anchor" aria-hidden="true" href="#print-the-number-of-fieldscolumns-in-each-line-of-the-file">#</a></h3>
+<pre tabindex="0"><code>awk &#39;{print NF}&#39; images.txt
+</code></pre><h3 id="more-presentable">more presentable<a hidden class="anchor" aria-hidden="true" href="#more-presentable">#</a></h3>
+<pre tabindex="0"><code>awk &#39;{print NR &#34;----&#34; NF}&#39; images.txt
+# 1----1
+# 2----7
+# 3----1
+# 4----7
+# 5----7
+# 6----7
+# 7----7
+# 8----7
+# 9----1
+</code></pre><h3 id="column-count-for-each-line">column count for each line<a hidden class="anchor" aria-hidden="true" href="#column-count-for-each-line">#</a></h3>
+<pre tabindex="0"><code>while read line
+do [ -z &#34;$line&#34; ] &amp;&amp; continue ;
+# echo $line
+COUNT=`echo $line|awk &#39;{print NF}&#39;`
+echo $COUNT
+# echo $line|rev|cut -f5 -d&#39; &#39;|rev
+done &lt; images.txt
+</code></pre><h3 id="print-column-2-if-column-text-is-not-id">print column 2 if column text is not <code>ID</code><a hidden class="anchor" aria-hidden="true" href="#print-column-2-if-column-text-is-not-id">#</a></h3>
+<pre tabindex="0"><code>awk &#39;{ if ($2!=&#34;ID&#34;) {print &#34;Image&#34;, $2, &#34;\n&#34;} }&#39; images.txt
+</code></pre><h1 id="awk-with-conditions">awk with conditions<a hidden class="anchor" aria-hidden="true" href="#awk-with-conditions">#</a></h1>
+<pre tabindex="0"><code>awk &#39;{ 
+id=$2;
+first_line=&#34;+----------------+--------------+-----------+&#34;;
+if($1!=first_line);
+{ print &#34;ID&#34;, $2, &#34;NAME&#34;, $4, &#34;STATUS&#34;, $6, &#34;\n&#34;};
+}&#39; images.txt
+</code></pre><h3 id="use-a-file-with-awk">use a file with awk<a hidden class="anchor" aria-hidden="true" href="#use-a-file-with-awk">#</a></h3>
+<pre tabindex="0"><code>cat &lt;&lt; EOF &gt; image.awk
+{ 
+id=$2;
+name=$4;
+status=$6;
+first_line=&#34;+----------------+--------------+-----------+&#34;;
+if ( id!=&#34;ID&#34; );
+{ print &#34;ID&#34;, $2, &#34;NAME&#34;, $4, &#34;STATUS&#34;, $6, &#34;\n&#34;};
+}
+EOF
+
+awk -f image.awk images.txt
+</code></pre><h3 id="using-a-file-for-input-another-file-for-command">using a file for input another file for command.<a hidden class="anchor" aria-hidden="true" href="#using-a-file-for-input-another-file-for-command">#</a></h3>
+<h4 id="create-a-text-file-called-kidstxt">create a text file called kids.txt<a hidden class="anchor" aria-hidden="true" href="#create-a-text-file-called-kidstxt">#</a></h4>
+<pre tabindex="0"><code>cat &lt;&lt; EOF &gt;kids.txt
+FEMIDA    8   Female      Berlin
+FARZANA   3   Female      Chennai
+YUSRA     6   Female      Howrah
+AFIRA     10  Female      Thanjavur
+FAZILA    4   Female      Thanjavur
+WAFIQAH   13  Female      Madurai
+FAZIL     10  Male        Santhamanikam
+FAIZAL    8   Male        Santhamanikam
+FEMINA    4   Female      Santhamanikam
+EOF
+</code></pre><h4 id="create-an-awk-command-file-called-languageawk">create an awk command file called language.awk<a hidden class="anchor" aria-hidden="true" href="#create-an-awk-command-file-called-languageawk">#</a></h4>
+<pre tabindex="0"><code>cat &lt;&lt; EOF &gt;language.awk
+{
+name=$1;
+if ( name==&#34;FEMIDA&#34; ) language=&#34;German&#34;;
+else if (name==&#34;FARZANA&#34;) language=&#34;English&#34;;
+else if (name==&#34;YUSRA&#34;) language=&#34;German&#34;;
+else if (name==&#34;AFIRA&#34;) language=&#34;English&#34;;
+else if (name==&#34;FAZILA&#34;) language=&#34;English&#34;;
+else if (name==&#34;WAFIQAH&#34;) language=&#34;English&#34;;
+else if (name==&#34;FAZIL&#34;) language=&#34;English&#34;;
+else if (name==&#34;FAIZAL&#34;) language=&#34;English&#34;;
+else language=&#34;None&#34;;
+
+if(language!=&#34;None&#34;) print &#34;The favorite language of &#34;, name, &#34;is &#34;, language;
+else print &#34;No person found&#34;;
+}
+EOF
+</code></pre><h4 id="run-it">run it<a hidden class="anchor" aria-hidden="true" href="#run-it">#</a></h4>
+<pre tabindex="0"><code>awk -f language.awk kids.txt
+</code></pre><h3 id="prints-last-columnfield-in-each-line">prints last column/field in each line<a hidden class="anchor" aria-hidden="true" href="#prints-last-columnfield-in-each-line">#</a></h3>
+<pre tabindex="0"><code>awk &#39;NF&gt;1{print $NF}&#39; kids.txt
+</code></pre><h3 id="prints-total-number-of-rowslines-in-the-file">prints total number of rows/lines in the file<a hidden class="anchor" aria-hidden="true" href="#prints-total-number-of-rowslines-in-the-file">#</a></h3>
+<pre tabindex="0"><code>awk &#39;END {print NR}&#39; kids.txt
+</code></pre><h3 id="similar-commands-to-acheive-the-same-thing">similar commands to acheive the same thing<a hidden class="anchor" aria-hidden="true" href="#similar-commands-to-acheive-the-same-thing">#</a></h3>
+<pre tabindex="0"><code>wc -l &lt; kids.txt
+sed -n &#39;$=&#39; kids.txt
+
+brew install gawk
+</code></pre><h3 id="get-first-field-of-a-file">get first field of a file<a hidden class="anchor" aria-hidden="true" href="#get-first-field-of-a-file">#</a></h3>
+<pre tabindex="0"><code>gawk -F: &#39;{ print $1 }&#39; kids.txt
+</code></pre><h3 id="create-a-file-called-markstxt">create a file called marks.txt<a hidden class="anchor" aria-hidden="true" href="#create-a-file-called-markstxt">#</a></h3>
+<pre tabindex="0"><code>cat &lt;&lt; EOF &gt;marks.txt
+Tamil       95
+English     100
+Mathematics 100
+Science     98
+Social      98
+EOF
+</code></pre><h3 id="prints-the-entire-line-if-text-found">prints the entire line if text found<a hidden class="anchor" aria-hidden="true" href="#prints-the-entire-line-if-text-found">#</a></h3>
+<pre tabindex="0"><code>grep &#39;^Tamil&#39; marks.txt
+
+gawk &#39;{ sum += $2 }; END { print &#34;You scored &#34;, sum, &#34;out of 500 marks&#34;}&#39; marks.txt
+</code></pre><h3 id="output">output<a hidden class="anchor" aria-hidden="true" href="#output">#</a></h3>
+<pre tabindex="0"><code>You scored  491 out of 500 marks
+</code></pre><h2 id="text-manipulation-with-cut">Text manipulation with cut<a hidden class="anchor" aria-hidden="true" href="#text-manipulation-with-cut">#</a></h2>
+<h3 id="-f3--prints-column-3-onwards-including-columnn-3">-f3- prints column 3 onwards including columnn 3<a hidden class="anchor" aria-hidden="true" href="#-f3--prints-column-3-onwards-including-columnn-3">#</a></h3>
+<pre tabindex="0"><code>echo &#34;ABC DEF MNO PQR ZSA&#34; | cut -d &#39; &#39; -f3-
+# it shows from columns 3 onwards including 3 
+MNO PQR ZSA
+</code></pre><h3 id="-f3-prints-column-3-only">-f3 prints column 3 only<a hidden class="anchor" aria-hidden="true" href="#-f3-prints-column-3-only">#</a></h3>
+<pre tabindex="0"><code>echo &#34;ABC DEF MNO PQR ZSA&#34; | cut -d &#39; &#39; -f3
+# output 
+MNO
+</code></pre><h3 id="use-awk-to-extract">use awk to extract<a hidden class="anchor" aria-hidden="true" href="#use-awk-to-extract">#</a></h3>
+<pre tabindex="0"><code>_input=kids.txt
+while IFS= read -r line
+do
+  awk &#39;{print substr($0, index($0,$4))}&#39; &lt;&lt;&lt; &#34;$line&#34;
+done &lt; &#34;${_input}&#34;
+</code></pre><h3 id="use-cut-to-extract">use cut to extract<a hidden class="anchor" aria-hidden="true" href="#use-cut-to-extract">#</a></h3>
+<pre tabindex="0"><code>echo &#34;ONE TWO THREE FOUR FIVE&#34; |  cut -d &#39; &#39; -f3-
+THREE FOUR FIVE
+</code></pre><h2 id="sed">sed<a hidden class="anchor" aria-hidden="true" href="#sed">#</a></h2>
+<h3 id="replace-just-the-text">replace just the text<a hidden class="anchor" aria-hidden="true" href="#replace-just-the-text">#</a></h3>
+<pre tabindex="0"><code>sed -ie &#39;s/Tamil/German/g&#39; marks.txt
+</code></pre><h3 id="replace-the-entire-line">replace the entire line<a hidden class="anchor" aria-hidden="true" href="#replace-the-entire-line">#</a></h3>
+<pre tabindex="0"><code>sed -ie &#39;s/.*German.*/Tamil  90/g&#39; marks.txt
+</code></pre><h3 id="search-something-and-write-if-not-found">search something and write if not found<a hidden class="anchor" aria-hidden="true" href="#search-something-and-write-if-not-found">#</a></h3>
+<pre tabindex="0"><code>grep -q &#39;^English&#39; marks.txt &amp;&amp; sed -ie &#39;s/^English.*/English 95/&#39; marks.txt 
+grep -q &#39;^English&#39; marks.txt &amp;&amp; sed -ie &#39;s/^English.*/English 100/&#39; marks.txt || echo &#39;English   95&#39; &gt;&gt; marks.txt
+</code></pre><h3 id="-as-a-separator-find-social-and-replaces-the-line-with-socialscience---98">@ as a separator; find Social and replaces the line with &lsquo;SocialScience   98&rsquo;<a hidden class="anchor" aria-hidden="true" href="#-as-a-separator-find-social-and-replaces-the-line-with-socialscience---98">#</a></h3>
+<pre tabindex="0"><code>sed -ie &#39;s@^Social.*@SocialScience   98@g&#39; marks.txt
+</code></pre><h3 id="finds-arabic-in-the-file-markstxt-if-not-found-writes-it">finds Arabic in the file marks.txt, if not found writes it<a hidden class="anchor" aria-hidden="true" href="#finds-arabic-in-the-file-markstxt-if-not-found-writes-it">#</a></h3>
+<pre tabindex="0"><code>grep -q &#34;Arabic&#34; marks.txt || echo &#34;Arabic  99&#34; &gt;&gt; marks.txt
+</code></pre>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="/">Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

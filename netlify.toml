@@ -8,4 +8,4 @@
 [dev]
   command = "hugo server --buildDrafts"
   publish = "public"
-  #targetPort = 3010
+  targetPort = 3010

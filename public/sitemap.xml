@@ -2,54 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.berlin-consulting-services.de/german/api-reference-for-developers-of-language-sites/</loc>
-    <lastmod>2022-12-19T02:07:09+01:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2023-09-30T08:09:44+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/</loc>
-    <lastmod>2022-12-19T02:07:09+01:00</lastmod>
+    <loc>/german/german-grammatik/</loc>
+    <lastmod>2023-09-30T08:09:44+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/about/</loc>
+    <loc>/german/german_resources/</loc>
+    <lastmod>2023-09-30T07:58:43+01:00</lastmod>
+  </url><url>
+    <loc>/german/german_free_text/</loc>
+    <lastmod>2023-09-29T08:07:44+01:00</lastmod>
+  </url><url>
+    <loc>/german/german-vhs_eltern_kurz_a2/</loc>
+    <lastmod>2023-09-14T10:09:59+01:00</lastmod>
+  </url><url>
+    <loc>/german/german_max-geht_zur_tagesmutter/</loc>
+    <lastmod>2023-09-13T08:07:44+01:00</lastmod>
+  </url><url>
+    <loc>/german/german-a2-1/</loc>
+    <lastmod>2023-06-26T10:09:59+01:00</lastmod>
+  </url><url>
+    <loc>/german/german-life-in-germany-test/</loc>
+    <lastmod>2023-06-26T10:09:59+01:00</lastmod>
+  </url><url>
+    <loc>/german/weekdays/</loc>
+    <lastmod>2022-12-18T09:21:59+01:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
     <lastmod>2022-12-17T08:09:44+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/german/german-nouns/</loc>
+    <loc>/german/german-nouns/</loc>
     <lastmod>2022-12-17T08:09:44+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/german/german-sentences/</loc>
+    <loc>/german/german-sentences/</loc>
     <lastmod>2022-12-17T08:09:34+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/german/german-verbs/</loc>
+    <loc>/german/german-sentences/</loc>
     <lastmod>2022-12-17T08:09:34+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/tech/ruby/</loc>
+    <loc>/german/german-verbs/</loc>
     <lastmod>2022-12-17T08:09:34+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/tech/</loc>
-    <lastmod>2022-12-17T08:09:34+01:00</lastmod>
+    <loc>/german/german_online_exercises/</loc>
+    <lastmod>2022-12-17T08:09:26+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/german/</loc>
+    <loc>/german/german_child_book/</loc>
+    <lastmod>2022-12-17T08:07:44+01:00</lastmod>
+  </url><url>
+    <loc>/german/german_dw_prufung/</loc>
+    <lastmod>2022-12-17T08:07:44+01:00</lastmod>
+  </url><url>
+    <loc>/german/german-a1-1/</loc>
+    <lastmod>2022-12-17T08:07:44+01:00</lastmod>
+  </url><url>
+    <loc>/german/german-a2-2/</loc>
+    <lastmod>2022-12-17T08:07:44+01:00</lastmod>
+  </url><url>
+    <loc>/german/</loc>
     <lastmod>2022-12-17T07:58:43+01:00</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/posts/publish-hugo-site/</loc>
+    <loc>/tech/hugo/publish-hugo-site/</loc>
     <lastmod>2022-03-08T12:03:27+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/posts/</loc>
+    <loc>/tech/</loc>
     <lastmod>2022-03-08T12:03:27+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2022-02-18T06:04:21+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/tech/ruby/jekyll-ruby-3.0-does-not-include-webrick/</loc>
+    <loc>/tech/ruby/jekyll-ruby-3.0-does-not-include-webrick/</loc>
     <lastmod>2022-02-18T06:04:21+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/categories/jekyll-install/</loc>
+    <loc>/categories/jekyll-install/</loc>
     <lastmod>2022-02-18T06:04:21+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/categories/awk-sed-cut/</loc>
+    <loc>/categories/awk-sed-cut/</loc>
     <lastmod>2022-02-18T04:04:21+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/tech/linux/text-processing-using-awk-sed-and-cut/</loc>
+    <loc>/tech/linux/text-processing-using-awk-sed-and-cut/</loc>
     <lastmod>2022-02-18T04:04:21+05:30</lastmod>
   </url><url>
-    <loc>https://blog.berlin-consulting-services.de/tags/</loc>
+    <loc>/german/a1.1_other/</loc>
+  </url><url>
+    <loc>/german/a1.1_test/</loc>
+  </url><url>
+    <loc>/german/another_german_translation/</loc>
+  </url><url>
+    <loc>/german/chatgpt_ideas_21_sep_2023/</loc>
+  </url><url>
+    <loc>/german/readme/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
 </urlset>
