@@ -2,7 +2,9 @@
 # baseURL: 'https://sirajudheen.netlify.app/'
 baseURL: /
 languageCode: en-us
-title: Blog
+title: Sirajudheen Blog
+
+googleAnalytics: 'G-EDXWEHTL6Z'
 
 # https://github.com/sirajudheenam/hugoPaper.git
 theme: hugoPaper
