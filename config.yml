@@ -10,7 +10,7 @@ sectionPagesMenu: 'main'
 markup.highlight.noClasses: false
 
 # Paper Theme related
-disqusShortname: 'buzzmesam' # add disqus comments
+disqusShortname: 'sirajudheen-blog-netlify-app' # add disqus comments
 # color style
 color: 'gray' # linen, wheat, gray, light
 # header social icons

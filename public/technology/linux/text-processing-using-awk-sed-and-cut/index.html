@@ -1,0 +1,150 @@
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#faf8f1 lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Text processing using awk sed and cut - Blog</title><meta name=theme-color><meta name=description content="awk openstack image list > images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk '$4==&#34;windows-2016&#34; {print $2}' images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk '$4==&#34;windows-2016&#34; {print $2}' images."><meta name=author content="Blog"><link rel="preload stylesheet" as=style href=/main.min.css><link rel=preload as=image href=/theme.png><script defer src=/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.119.0"><meta itemprop=name content="Text processing using awk sed and cut"><meta itemprop=description content="awk openstack image list > images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk '$4==&#34;windows-2016&#34; {print $2}' images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk '$4==&#34;windows-2016&#34; {print $2}' images."><meta itemprop=datePublished content="2022-02-18T04:04:21+05:30"><meta itemprop=dateModified content="2022-02-18T04:04:21+05:30"><meta itemprop=wordCount content="782"><meta itemprop=keywords content><meta property="og:title" content="Text processing using awk sed and cut"><meta property="og:description" content="awk openstack image list > images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk '$4==&#34;windows-2016&#34; {print $2}' images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk '$4==&#34;windows-2016&#34; {print $2}' images."><meta property="og:type" content="article"><meta property="og:url" content="/technology/linux/text-processing-using-awk-sed-and-cut/"><meta property="article:section" content="technology"><meta property="article:published_time" content="2022-02-18T04:04:21+05:30"><meta property="article:modified_time" content="2022-02-18T04:04:21+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="Text processing using awk sed and cut"><meta name=twitter:description content="awk openstack image list > images.txt +----------------+--------------+-----------+ | ID | Name | Status | +----------------+--------------+-----------+ | 9789-4b3f-95b8 | windows-2012 | active | | 27a3-46c2-b821 | windows-2016 | active | | f45a-4c89-a69f | windows-2019 | active | | 012f-4751-822a | windows-2019 | active | | 68c8-4d4b-a5b5 | windows-2022 | active | +----------------+--------------+-----------+ extract only windows-2016 image id # on a bash or zsh shell ID=`awk '$4==&#34;windows-2016&#34; {print $2}' images.txt` echo $ID 27a3-46c2-b821 # on a fish shell set ID $(awk '$4==&#34;windows-2016&#34; {print $2}' images."><link rel=canonical href=/technology/linux/text-processing-using-awk-sed-and-cut/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=/>Blog</a><div class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>About</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/deutsch/>German</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/technology/>Technologies</a></nav></div></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"><article><header class=mb-16><h1 class="!my-0 pb-2.5">Text processing using awk sed and cut</h1><div class="text-sm antialiased opacity-60"><time>Feb 18, 2022</time></div></header><section><h2 id=awk>awk</h2><pre tabindex=0><code>openstack image list &gt; images.txt
++----------------+--------------+-----------+
+| ID             | Name         | Status    |
++----------------+--------------+-----------+
+| 9789-4b3f-95b8 | windows-2012 | active    |
+| 27a3-46c2-b821 | windows-2016 | active    |
+| f45a-4c89-a69f | windows-2019 | active    |
+| 012f-4751-822a | windows-2019 | active    |
+| 68c8-4d4b-a5b5 | windows-2022 | active    |
++----------------+--------------+-----------+
+</code></pre><h3 id=extract-only-windows-2016-image-id>extract only windows-2016 image id</h3><pre tabindex=0><code># on a bash or zsh shell
+ID=`awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt`
+echo $ID
+27a3-46c2-b821
+
+# on a fish shell
+set ID $(awk &#39;$4==&#34;windows-2016&#34; {print $2}&#39; images.txt)
+echo $ID
+27a3-46c2-b821
+</code></pre><h3 id=using-a-variable>using a variable</h3><pre tabindex=0><code># on a bash or zsh shell
+IMAGE_NAME=&#34;windows-2022&#34;
+ID=`awk -v image_name=$IMAGE_NAME &#39;$4==image_name {print $2}&#39; images.txt`
+echo $ID
+68c8-4d4b-a5b5
+
+# on a fish shell
+set IMAGE_NAME &#39;windows-2022&#39;
+set ID $(awk -v image_name=$IMAGE_NAME &#39;$4==image_name {print $2}&#39; ~/tmp/images.txt)
+echo $ID
+68c8-4d4b-a5b5
+</code></pre><h3 id=find-a-process-middleman-and-kill-it>find a process (middleman) and kill it</h3><pre tabindex=0><code>kill -9 $(ps -ef | grep middleman | awk &#39;$8==&#34;/usr/local/var/rbenv/versions/2.3.0/bin/middleman&#34; {print $2}&#39;)
+# find another process and kill it
+</code></pre><h2 id=cut>cut</h2><h3 id=list-status-column>list status column</h3><pre tabindex=0><code>while read line
+do [ -z &#34;$line&#34; ] &amp;&amp; continue ;
+echo $line|rev|cut -f5 -d&#39; &#39;|rev
+done &lt; images.txt
+</code></pre><h3 id=read-all-image-names>read all image names</h3><pre tabindex=0><code>while read line
+do [ -z &#34;$line&#34; ] &amp;&amp; continue ;
+echo $line|cut -f4 -d&#39; &#39;
+done &lt; images.txt
+</code></pre><h3 id=get-lines-count>get lines count</h3><pre tabindex=0><code>cat -n images.txt | tail -n 1 | cut -f1
+</code></pre><h3 id=print-the-number-of-fieldscolumns-in-each-line-of-the-file>print the number of fields/columns in each line of the file</h3><pre tabindex=0><code>awk &#39;{print NF}&#39; images.txt
+</code></pre><h3 id=more-presentable>more presentable</h3><pre tabindex=0><code>awk &#39;{print NR &#34;----&#34; NF}&#39; images.txt
+# 1----1
+# 2----7
+# 3----1
+# 4----7
+# 5----7
+# 6----7
+# 7----7
+# 8----7
+# 9----1
+</code></pre><h3 id=column-count-for-each-line>column count for each line</h3><pre tabindex=0><code>while read line
+do [ -z &#34;$line&#34; ] &amp;&amp; continue ;
+# echo $line
+COUNT=`echo $line|awk &#39;{print NF}&#39;`
+echo $COUNT
+# echo $line|rev|cut -f5 -d&#39; &#39;|rev
+done &lt; images.txt
+</code></pre><h3 id=print-column-2-if-column-text-is-not-id>print column 2 if column text is not <code>ID</code></h3><pre tabindex=0><code>awk &#39;{ if ($2!=&#34;ID&#34;) {print &#34;Image&#34;, $2, &#34;\n&#34;} }&#39; images.txt
+</code></pre><h1 id=awk-with-conditions>awk with conditions</h1><pre tabindex=0><code>awk &#39;{ 
+id=$2;
+first_line=&#34;+----------------+--------------+-----------+&#34;;
+if($1!=first_line);
+{ print &#34;ID&#34;, $2, &#34;NAME&#34;, $4, &#34;STATUS&#34;, $6, &#34;\n&#34;};
+}&#39; images.txt
+</code></pre><h3 id=use-a-file-with-awk>use a file with awk</h3><pre tabindex=0><code>cat &lt;&lt; EOF &gt; image.awk
+{ 
+id=$2;
+name=$4;
+status=$6;
+first_line=&#34;+----------------+--------------+-----------+&#34;;
+if ( id!=&#34;ID&#34; );
+{ print &#34;ID&#34;, $2, &#34;NAME&#34;, $4, &#34;STATUS&#34;, $6, &#34;\n&#34;};
+}
+EOF
+
+awk -f image.awk images.txt
+</code></pre><h3 id=using-a-file-for-input-another-file-for-command>using a file for input another file for command.</h3><h4 id=create-a-text-file-called-kidstxt>create a text file called kids.txt</h4><pre tabindex=0><code>cat &lt;&lt; EOF &gt;kids.txt
+FEMIDA    8   Female      Berlin
+FARZANA   3   Female      Chennai
+YUSRA     6   Female      Howrah
+AFIRA     10  Female      Thanjavur
+FAZILA    4   Female      Thanjavur
+WAFIQAH   13  Female      Madurai
+FAZIL     10  Male        Santhamanikam
+FAIZAL    8   Male        Santhamanikam
+FEMINA    4   Female      Santhamanikam
+EOF
+</code></pre><h4 id=create-an-awk-command-file-called-languageawk>create an awk command file called language.awk</h4><pre tabindex=0><code>cat &lt;&lt; EOF &gt;language.awk
+{
+name=$1;
+if ( name==&#34;FEMIDA&#34; ) language=&#34;German&#34;;
+else if (name==&#34;FARZANA&#34;) language=&#34;English&#34;;
+else if (name==&#34;YUSRA&#34;) language=&#34;German&#34;;
+else if (name==&#34;AFIRA&#34;) language=&#34;English&#34;;
+else if (name==&#34;FAZILA&#34;) language=&#34;English&#34;;
+else if (name==&#34;WAFIQAH&#34;) language=&#34;English&#34;;
+else if (name==&#34;FAZIL&#34;) language=&#34;English&#34;;
+else if (name==&#34;FAIZAL&#34;) language=&#34;English&#34;;
+else language=&#34;None&#34;;
+
+if(language!=&#34;None&#34;) print &#34;The favorite language of &#34;, name, &#34;is &#34;, language;
+else print &#34;No person found&#34;;
+}
+EOF
+</code></pre><h4 id=run-it>run it</h4><pre tabindex=0><code>awk -f language.awk kids.txt
+</code></pre><h3 id=prints-last-columnfield-in-each-line>prints last column/field in each line</h3><pre tabindex=0><code>awk &#39;NF&gt;1{print $NF}&#39; kids.txt
+</code></pre><h3 id=prints-total-number-of-rowslines-in-the-file>prints total number of rows/lines in the file</h3><pre tabindex=0><code>awk &#39;END {print NR}&#39; kids.txt
+</code></pre><h3 id=similar-commands-to-acheive-the-same-thing>similar commands to acheive the same thing</h3><pre tabindex=0><code>wc -l &lt; kids.txt
+sed -n &#39;$=&#39; kids.txt
+
+brew install gawk
+</code></pre><h3 id=get-first-field-of-a-file>get first field of a file</h3><pre tabindex=0><code>gawk -F: &#39;{ print $1 }&#39; kids.txt
+</code></pre><h3 id=create-a-file-called-markstxt>create a file called marks.txt</h3><pre tabindex=0><code>cat &lt;&lt; EOF &gt;marks.txt
+Tamil       95
+English     100
+Mathematics 100
+Science     98
+Social      98
+EOF
+</code></pre><h3 id=prints-the-entire-line-if-text-found>prints the entire line if text found</h3><pre tabindex=0><code>grep &#39;^Tamil&#39; marks.txt
+
+gawk &#39;{ sum += $2 }; END { print &#34;You scored &#34;, sum, &#34;out of 500 marks&#34;}&#39; marks.txt
+</code></pre><h3 id=output>output</h3><pre tabindex=0><code>You scored  491 out of 500 marks
+</code></pre><h2 id=text-manipulation-with-cut>Text manipulation with cut</h2><h3 id=-f3--prints-column-3-onwards-including-columnn-3>-f3- prints column 3 onwards including columnn 3</h3><pre tabindex=0><code>echo &#34;ABC DEF MNO PQR ZSA&#34; | cut -d &#39; &#39; -f3-
+# it shows from columns 3 onwards including 3 
+MNO PQR ZSA
+</code></pre><h3 id=-f3-prints-column-3-only>-f3 prints column 3 only</h3><pre tabindex=0><code>echo &#34;ABC DEF MNO PQR ZSA&#34; | cut -d &#39; &#39; -f3
+# output 
+MNO
+</code></pre><h3 id=use-awk-to-extract>use awk to extract</h3><pre tabindex=0><code>_input=kids.txt
+while IFS= read -r line
+do
+  awk &#39;{print substr($0, index($0,$4))}&#39; &lt;&lt;&lt; &#34;$line&#34;
+done &lt; &#34;${_input}&#34;
+</code></pre><h3 id=use-cut-to-extract>use cut to extract</h3><pre tabindex=0><code>echo &#34;ONE TWO THREE FOUR FIVE&#34; |  cut -d &#39; &#39; -f3-
+THREE FOUR FIVE
+</code></pre><h2 id=sed>sed</h2><h3 id=replace-just-the-text>replace just the text</h3><pre tabindex=0><code>sed -ie &#39;s/Tamil/German/g&#39; marks.txt
+</code></pre><h3 id=replace-the-entire-line>replace the entire line</h3><pre tabindex=0><code>sed -ie &#39;s/.*German.*/Tamil  90/g&#39; marks.txt
+</code></pre><h3 id=search-something-and-write-if-not-found>search something and write if not found</h3><pre tabindex=0><code>grep -q &#39;^English&#39; marks.txt &amp;&amp; sed -ie &#39;s/^English.*/English 95/&#39; marks.txt 
+grep -q &#39;^English&#39; marks.txt &amp;&amp; sed -ie &#39;s/^English.*/English 100/&#39; marks.txt || echo &#39;English   95&#39; &gt;&gt; marks.txt
+</code></pre><h3 id=-as-a-separator-find-social-and-replaces-the-line-with-socialscience---98>@ as a separator; find Social and replaces the line with &lsquo;SocialScience 98&rsquo;</h3><pre tabindex=0><code>sed -ie &#39;s@^Social.*@SocialScience   98@g&#39; marks.txt
+</code></pre><h3 id=finds-arabic-in-the-file-markstxt-if-not-found-writes-it>finds Arabic in the file marks.txt, if not found writes it</h3><pre tabindex=0><code>grep -q &#34;Arabic&#34; marks.txt || echo &#34;Arabic  99&#34; &gt;&gt; marks.txt
+</code></pre></section><div class=mt-24 id=disqus_thread></div><script>const disqusShortname="sirajudheen-blog-netlify-app",script=document.createElement("script");script.src="https://"+disqusShortname+".disqus.com/embed.js",script.setAttribute("data-timestamp",+new Date),document.head.appendChild(script)</script></article></main><footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class=mr-auto>&copy; 2023
+<a class=link href=/>Blog</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>✎ Paper</a></footer></body></html>
